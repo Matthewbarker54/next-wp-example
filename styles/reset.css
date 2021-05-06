@@ -1,0 +1,111 @@
+@font-face {
+	font-family: "comfortaa";
+	src: url("/assets/fonts/comfortaa/Comfortaa-Light.ttf");
+	src: url("/assets/fonts/comfortaa/Comfortaa-Light.ttf") format("woff2"),
+		url("/assets/fonts/comfortaa/Comfortaa-Light.ttf") format("woff");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "comfortaa";
+	src: url("/assets/fonts/comfortaa/Comfortaa-Regular.ttf");
+	src: url("/assets/fonts/comfortaa/Comfortaa-Regular.ttf") format("woff2"),
+		url("/assets/fonts/comfortaa/Comfortaa-Regular.ttf") format("woff");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "comfortaa";
+	src: url("/assets/fonts/comfortaa/Comfortaa-Medium.ttf");
+	src: url("/assets/fonts/comfortaa/Comfortaa-Medium.ttf") format("woff2"),
+		url("/assets/fonts/comfortaa/Comfortaa-Medium.ttf") format("woff");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "comfortaa";
+	src: url("/assets/fonts/comfortaa/Comfortaa-SemiBold.ttf");
+	src: url("/assets/fonts/comfortaa/Comfortaa-SemiBold.ttf") format("woff2"),
+		url("/assets/fonts/comfortaa/Comfortaa-SemiBold.ttf") format("woff");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "comfortaa";
+	src: url("/assets/fonts/comfortaa/Comfortaa-Bold.ttf");
+	src: url("/assets/fonts/comfortaa/Comfortaa-Bold.ttf") format("woff2"),
+		url("/assets/fonts/comfortaa/Comfortaa-Bold.ttf") format("woff");
+	font-weight: 700;
+}
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "comfortaa", Arial, sans-serif;
+	color: #4a4a4a;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2 {
+	margin-bottom: 40px;
+}
+
+h3,
+h4 {
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 29px;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	appearance: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	background-color: transparent;
+	border-radius: 2px;
+	padding: 2px;
+	cursor: pointer;
+}
+
+textarea {
+	font-family: "comfortaa", Arial, sans-serif;
+}

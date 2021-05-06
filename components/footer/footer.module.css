@@ -1,0 +1,162 @@
+.footer {
+	background-color: var(--primary-clr);
+	padding: 3rem 1rem 1rem;
+}
+
+.content {
+	max-width: var(--web-width);
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.logoWrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	max-width: 219px;
+	margin-bottom: 1.5rem;
+}
+
+.logo img {
+	max-height: 100px;
+}
+
+.social {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.socialIcon:focus {
+	box-shadow: none;
+}
+
+.social svg {
+	height: 26px;
+	width: 26px;
+	margin-right: 1rem;
+	border-radius: 5px;
+}
+
+.social svg path {
+	fill: #fff;
+}
+
+.right_panel {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.panel {
+	width: 100%;
+}
+
+.footer_link {
+	font: 500 1rem/1.375rem "comfortaa";
+	text-transform: capitalize;
+	transition: border-color 200ms ease-in-out, color 200ms ease-in-out;
+	color: #fff;
+	margin-bottom: 0.75rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.footer_link::after {
+	position: absolute;
+	top: 90%;
+	left: -100%;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #fff;
+	transition: all 200ms ease-in-out;
+}
+
+.active::after,
+.footer_link:hover::after,
+.footer_link:focus::after {
+	left: 0;
+}
+
+.footer_link:focus {
+	box-shadow: none;
+}
+
+.inner .list {
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+.info {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.info p,
+.info li {
+	color: #fff;
+	font-size: 14px;
+}
+
+.list {
+	font-family: "comfortaa";
+}
+
+.list li {
+	color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+	.footer {
+		padding: 3.25rem 2.5rem 1rem;
+	}
+	.content {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.panel {
+		width: 50%;
+		max-width: 450px;
+	}
+	.inner {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 10px;
+	}
+	.web_links {
+		width: 50%;
+	}
+	.web_links li {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+	}
+	.footer_link {
+		text-align: right;
+		margin: 0 0 0.75rem 1rem;
+	}
+
+	.inner .list {
+		text-align: right;
+		width: 50%;
+		padding: 0 0 0 1rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.content {
+		flex-direction: row;
+	}
+	.right_panel {
+		justify-content: space-between;
+		width: 50%;
+		margin-left: auto;
+	}
+}

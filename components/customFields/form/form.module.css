@@ -1,0 +1,70 @@
+.panel {
+	padding: 0 1rem 2rem;
+}
+
+.content {
+	width: 100%;
+	max-width: 746px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.box {
+	padding: 2rem;
+	width: 100%;
+	max-width: 780px;
+	margin: 0 auto;
+	box-shadow: 0 0 16px 0.5px rgba(0, 0, 0, 0.25);
+}
+
+.box h2 {
+	font-size: 28px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.grid select, .grid input, .grid button {
+	margin-top: 7px;
+}
+
+.grid input[type="checkbox"] {
+	margin: 1rem 10px 1rem 0 !important;
+}
+
+.grid button {
+	width: fit-content;
+	margin-bottom: 10px;
+}
+
+.fileDesc {
+	font-weight: 400;
+	font-size: 1rem;
+	text-transform: none;
+}
+
+.fileName {
+	text-transform: lowercase;
+	text-decoration: underline;
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 550px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.panel {
+		padding: 0 5rem 4.375rem;
+	}
+}

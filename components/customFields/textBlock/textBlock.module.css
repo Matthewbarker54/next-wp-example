@@ -1,0 +1,47 @@
+.panel {
+	padding: 2rem 1rem;
+}
+
+.content {
+	width: 100%;
+	max-width: var(--web-width);
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.content.contentCenter {
+	text-align: center;
+	max-width: 746px;
+}
+
+.content_block ul {
+	margin: 0 0 1rem 1rem;
+	list-style-type: disc;
+}
+
+.content_block ul li {
+	margin-bottom: 1rem;
+}
+
+.content_block ol {
+	margin: 0 0 1rem 1rem;
+	list-style-type: decimal;
+}
+
+.cta {
+	width: fit-content;
+	margin: 1rem auto 0;
+}
+
+@media screen and (min-width: 800px) {
+	.panel {
+		padding: 4.375rem 2.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.panel {
+		padding: 4.375rem 5rem;
+	}
+}

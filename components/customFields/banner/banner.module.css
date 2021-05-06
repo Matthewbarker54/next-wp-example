@@ -1,0 +1,40 @@
+.panel {
+	padding: 4rem 1rem;
+}
+
+.content {
+	width: 100%;
+	max-width: var(--web-width);
+	margin: auto;
+	text-align: center;
+}
+
+.content h3 {
+	margin-bottom: 1rem;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 1rem;
+}
+
+.text a {
+	font-weight: 600;
+	color: var(--primary-clr);
+}
+
+.text a:hover {
+	text-decoration: underline;
+	box-shadow: none;
+}
+
+.text a:focus {
+	box-shadow: none;
+}
+
+@media screen and (min-width: 800px) {
+	.panel {
+		padding: 6rem 2.5rem;
+	}
+}

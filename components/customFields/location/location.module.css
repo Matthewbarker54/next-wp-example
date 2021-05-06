@@ -1,0 +1,65 @@
+.panel {
+	padding: 2rem 1rem;
+}
+
+.content {
+	width: 100%;
+	max-width: var(--web-width);
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.inner p,
+.inner li {
+	margin-bottom: 0.5rem;
+}
+
+.inner a,
+.inner strong {
+	font-weight: 700;
+	color: var(--primary-clr);
+}
+
+.inner a:hover {
+	text-decoration: underline;
+	box-shadow: none;
+}
+
+.inner a:focus {
+	box-shadow: none;
+}
+
+.map {
+	margin-top: 2rem;
+	width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+	.panel {
+		padding: 5rem 2.5rem;
+	}
+	.content {
+		flex-direction: row;
+	}
+
+	.block,
+	.map {
+		width: 50%;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.inner {
+		min-width: 300px;
+		width: fit-content;
+		padding-right: 2rem;
+	}
+
+	.map {
+		margin: 0;
+	}
+}
